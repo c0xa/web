@@ -1,54 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>iinto</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="main">
-        <div class='empty'></div>
         <div class='left'>
-            <img id="img_main"  src="img/bg.jpg"> <img id="img_logo" src="img/logo.svg" alt="">
+            <img id="img_main"  src="img/bg.jpg" alt="main_img"> <img id="img_logo" src="img/logo.svg" alt="Logo_image">
         </div>
         <div class='right'>
-            <div class="content">
-                <h1>Get iinto it today</h1>
-                <p>There is no charge or obligation upon registration</p>
+            <h1>Get iinto it today</h1>
+            <p>There is no charge or obligation upon registration</p>
+            <div class="buttonRegister">
+                <button class="facebook">
+                    <img src="img/facebook.svg" alt="Facebook" style="vertical-align: middle">
+                    <span>Register with Facebook</span>
+                </button>
+                <button class="linkdel">
+                    <img src="img/linkedin.svg" alt="Linkedin" style="vertical-align: middle">
+                    <span>Register with Linkedin</span>
+                </button>
             </div>
-                <div class="button">
-                    <a href=><div class="facebook">  &nbsp; <img src="img/facebook.svg"> &nbsp; &nbsp; Register with Facebook</div></a>
-                    <a href><div class="linkdel">  <img src="img/linkedin.svg">&nbsp &nbsp Register with Facebook </div></a>
+            <div class="space_for_or">or </div>
+            <div class="inputText">
+                <input type="text" size="24" placeholder="Email">
+                <input  class="padding_for_inputText" type="text" size="24" placeholder="Phone">
+            </div>
+            <div class="information">
+                <h3>Where type of investor are you?</h3>
+                <p>Select the type of investor you are below.</p>
+            </div>
+            <div class="radiobutton"  >
+                <div class='inline space'><input name="Individual" id="radio1" type="radio" value="Individual">
+                    <label for="radio1">
+                        Individual<img src="img/qust.jpg" alt="question">
+                    </label>
                 </div>
-                <div class="clearfix"></div>
-                <div class="divhr space">or </div>
-                <div class="input space">
-                    <div class="input1"><input type="text" size="24" placeholder="Email"> </div>
-                    <div class="input2"><input   type="text" size="24" placeholder="Phone"></div>
+                <div class='inline space'>
+                    <input name="Business" id="radio2" type="radio" value="Business">
+                    <label for="radio2">
+                        Business<img src="img/qust.jpg" alt="question">
+                    </label>
                 </div>
-                <div class="content">
-                    <h3>Where type of investor are you?</h3>
-                    <p>Select the type of investor you are below.</p>
+                <div class='inline space'>
+                    <input name="IRA" id="radio3" type="radio" value="IRA" checked>
+                    <label for="radio3">
+                        IRA<img src="img/qust.jpg" alt="question">
+                    </label>
                 </div>
-                <div class="radiobutton"  >
-                    <div class='inline space'><input name="dzen" type="radio" value="Individual">Individual <img src="img/qust.jpg" alt=""></div>
-                    <div class='inline space'><input name="dzen" type="radio" value="Business"> Business <img src="img/qust.jpg" alt=""></div>
-                    <div class='inline space'><input name="dzen" type="radio" value="IRA" checked>IRA <img src="img/qust.jpg" alt=""></div>
-                    <div class='inline space'><input name="dzen" type="radio" value="Trust" checked>Trust  <img src="img/qust.jpg" alt=""></div>
-                </div>
-                <div class="div_text text"> 
-                    <p>I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in coommon</p>
-                </div>
-                <div class="text content">
-                    <label><input type="checkbox" name="ez">I agree to the terms and receinveng notifications from iinto <a href=>View full terms</a></label> 
-                </div>
-                <div class="button_create content">
-                    <button>Create Account</button>
+                <div class='inline space'>
+                    <input name="Trust"  id="radio4" type="radio" value="Trust" checked>
+                    <label for="radio4">
+                        Trust<img src="img/qust.jpg" alt="question">
+                    </label>
                 </div>
             </div>
+            <div class="div_text"> 
+                <p>I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in coommon</p>
+            </div>
+            <div class="text content">
+                <label><input type="checkbox" name="checkbox_agree">I agree to the terms and receinveng notifications from iinto <a> View full terms</a></label> 
+            </div>
+            <button class="button_create">Create Account</button>
         </div>
-        <div class="clearfix"></div>
-        <div class='empty'></div>
     </div>
 </body>
 </html>

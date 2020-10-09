@@ -5,27 +5,10 @@ div {
 .main {
     max-width: 1040px;
     margin: 0px auto;
-    
-}
-
-.empty {
-    height: 100px;
 }
 
 body {
     background-color: #EFF6FF;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.input1 {
-    float: left;
-}
-
-.input2 {
-    float: right;
 }
 
 .left {
@@ -33,15 +16,17 @@ body {
 }
 
 .left, .right {
-    color: #2A4A5C;
-    background-color: white;
+    margin-top: 100px;
     width: 500px;
-    height: 660px;
 }
 
 .right {
     float: right;
+    padding-top: 50px;
     padding-left: 40px;
+
+    color: #2A4A5C;
+    background-color: white;
 }
 
 #img_main{
@@ -53,17 +38,14 @@ body {
     top: -640px;
     left: 30px;
     width: 100px;
-
 }
 
-.content {
-    padding-top: 25px;
+.buttonRegister .inputText {
+    display: flex;
 }
 
-.button {
-    padding-top: 30px;
-    margin: 0;
-    width: 440px;
+.padding_for_inputText {
+    margin-left: 20px;
 }
 
 .facebook,  .linkdel {
@@ -73,39 +55,46 @@ body {
     font-size: 14px;
 }
 
-.button img{
+.buttonRegister img{
     width: 15px;
+    padding-bottom: 5px;
     padding-top: 5px;
-    padding-left: auto;
 }
 
 .facebook {
     background-color: #255A9B;
-    float: left;
 }
 
 .linkdel {
-    padding-left: 20px;
+    margin-left: 20px;
     background-color: #0076B6;
-    float: right;
+}
+
+.facebook span, .linkdel span{
+    padding-left: 5px;
 }
 
 .left img {
      width: 100%;
 }
 
-.space {
-    padding-top: 20px;
+.space_for_or::after {
+    content: "_____________"
 }
 
-.divhr {
-    padding-left: 195px;
-    width: 500px;
+.space_for_or::before {
+    content: "_____________ "
 }
 
-.input {
-    margin: 0;
-    width: 420px;
+.space_for_or {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 100px;
+}
+
+.information {
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .inline {
@@ -136,8 +125,9 @@ body {
     color: rgb(105, 181, 253);
 }
 
-.button_create button {
-    align: center;
+.button_create   {
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: none;
     width: 250px;
     height: 50px;
