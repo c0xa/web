@@ -1,64 +1,49 @@
-div {
-    display: block;
-}
 
-.main {
+.wrapper {
     max-width: 1040px;
     margin: 0px auto;
+    display: flex;
 }
 
 body {
     background-color: #EFF6FF;
 }
 
-.left {
-    float: left;
-}
-
 .left, .right {
-    margin-top: 100px;
+    margin: 100px 0 50px 0;
     width: 500px;
 }
 
 .right {
-    float: right;
-    padding-top: 50px;
-    padding-left: 40px;
-
+    padding: 50px 0 0 40px ;
     color: #2A4A5C;
-    background-color: white;
+    background-color:  rgb(255, 255, 255);
 }
 
-#img_main{
-    position: relative;
-}
-
-#img_logo {
-    position: relative;
-    top: -640px;
-    left: 30px;
-    width: 100px;
-}
-
-.buttonRegister .inputText {
+.button-Register .input-Text{
     display: flex;
 }
 
-.padding_for_inputText {
-    margin-left: 20px;
+.Input-Text-Phone, .Input-Text-Email {
+    width: 190px;
+    height: 30px;
+}
+
+.Input-Text-Phone {
+    margin-left: 25px;
 }
 
 .facebook,  .linkdel {
     width: 200px;
     height: 30px;
-    color: white;
+    color: rgb(241, 241, 241);
     font-size: 14px;
 }
 
-.buttonRegister img{
+.button-Register img{
+
     width: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px;
 }
 
 .facebook {
@@ -70,7 +55,12 @@ body {
     background-color: #0076B6;
 }
 
+.linkdel img, .facebook img{
+    vertical-align: middle;
+}
+
 .facebook span, .linkdel span{
+    vertical-align: "middle";
     padding-left: 5px;
 }
 
@@ -78,18 +68,8 @@ body {
      width: 100%;
 }
 
-.space_for_or::after {
-    content: "_____________"
-}
-
-.space_for_or::before {
-    content: "_____________ "
-}
-
-.space_for_or {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 100px;
+.Div-or p{
+    padding: 20px 0 30px 200px;
 }
 
 .information {
@@ -106,32 +86,31 @@ body {
     width: 12px;
 }
 
-.text {
-    color: grey;
+.checkbox-agree {
+    color: rgb(133, 129, 129);
     font-size: 15px;
 }
 
-.div_text {
+.div-text {
     width: 250px;
     box-shadow: 0 0 5px;
     margin-top: 20px;
 }
 
-.div_text p {
+.div-text p {
     padding: 10px ;
 }
 
-.text a {
+.checkbox-agree a {
     color: rgb(105, 181, 253);
 }
 
-.button_create   {
-    margin-top: 20px;
-    margin-bottom: 20px;
+.button-create   {
+    margin: 20px 0 20px 0;
     border: none;
     width: 250px;
     height: 50px;
-    color: white;
+    color:  rgb(241, 241, 241);
     font-size: 16px;
     border-radius: 5px;
     background-color: rgb(105, 181, 253);
