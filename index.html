@@ -7,69 +7,81 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class='left'>
-            <img id="img-main" src="img/bq.jpg" alt="main_img">
-        </div>
-        <div class='right'>
-            <h1>Get iinto it today</h1>
-            <p>There is no charge or obligation upon registration</p>
-            <form class="button-Register">
-                <button class="facebook">
-                    <img src="img/facebook.svg" alt="Facebook">
-                    <span>Register with Facebook</span>
+<div class="wrapper">
+    <main class="content">
+        <article class="container-image column-left">
+            <img class="container-image__logo" src="img/logo.svg" alt="logo_img">
+            <img class="container-image__background" src="img/bg.jpg" alt="main_img">
+        </article>
+        <article class="container-main column-right">
+            <h1 class="container-title">Get iinto it today</h1>
+            <p class="container-main__label">There is no charge or obligation upon registration</p>
+            <form class="container-main__form">
+                <button class="button-register button_type_facebook">
+                    <img class="button-register__image" src="img/facebook.svg" alt="Facebook">
+                    <span class="button-register__title">Register with Facebook</span>
                 </button>
-                <button class="linkdel">
-                    <img src="img/linkedin.svg" alt="Linkedin">
-                    <span>Register with Linkedin</span>
+                <button class="button-register button_type_linkdel">
+                    <img class="button-register__image" src="img/linkedin.svg" alt="Linkedin">
+                    <span class="button-register__title">Register with Linkedin</span>
                 </button>
             </form>
-            <div class="Div-or">
-                <p>or</p>
+            <div class="container-main__solid">
+                <p class="container-main__label container-main__label_border">or</p>
             </div>
-            <form class="input-Text">
-                <input class="Input-Text-Email" type="text" placeholder="Email">
-                <input  class="Input-Text-Phone" type="text" placeholder="Phone">
+            <form class="container-main__form">
+                <input class="form-input input_mail" type="text" placeholder="Email">
+                <input class="form-input input_phone" type="text" placeholder="Phone">
             </form>
-            <div class="information">
-                <h3>Where type of investor are you?</h3>
-                <p>Select the type of investor you are below.</p>
+            <div class="container-main__information _m-20">
+                <h3 class="container-main__title">What type of investor are you?</h3>
+                <p class="container-main__label">Select the type of investor you are below.</p>
             </div>
-            <form class="radio-button"  >
-                <div class='inline'><input name="Individual" id="radio1" type="radio" value="Individual">
-                    <label for="radio1">
-                        Individual<img src="img/qust.jpg" alt="question">
+            <form class="container-main__form">
+                <div class="option-property">
+                    <input class="option-property__input" name="property" id="radio-individual" type="radio" value="Individual">
+                    <label class="option-property__text" for="radio-individual">
+                        <p class="option-property__label">Individual</p>
+                        <img class="option-property__img" src="img/qust.jpg" alt="question">
                     </label>
                 </div>
-                <div class='inline'>
-                    <input name="Business" id="radio2" type="radio" value="Business">
-                    <label for="radio2">
-                        Business<img src="img/qust.jpg" alt="question">
+                <div class="option-property">
+                    <input class="option-property__input" name="property" id="radio-business" type="radio" value="Business">
+                    <label class="option-property__text" for="radio-business">
+                        <p class="option-property__label">Business</p>
+                        <img class="option-property__img" src="img/qust.jpg" alt="question">
                     </label>
                 </div>
-                <div class='inline'>
-                    <input name="IRA" id="radio3" type="radio" value="IRA" >
-                    <label for="radio3">
-                        IRA<img src="img/qust.jpg" alt="question">
+                <div class="option-property">
+                    <input class="option-property__input" name="property" id="radio-ira" type="radio" value="IRA">
+                    <label class="option-property__text" for="radio-ira">
+                        <p class="option-property__label">IRA</p>
+                        <img class="option-property__img" src="img/qust.jpg" alt="question">
                     </label>
                 </div>
-                <div class='inline'>
-                    <input name="Trust"  id="radio4" type="radio" value="Trust" >
-                    <label for="radio4">
-                        Trust<img src="img/qust.jpg" alt="question">
+                <div class="option-property">
+                    <input class="option-property__input" name="property" id="radio-trust" type="radio" value="Trust">
+                    <label class="option-property__text" for="radio-trust">
+                        <p class="option-property__label">Trust</p>
+                        <img class="option-property__img" src="img/qust.jpg" alt="question">
                     </label>
                 </div>
             </form>
-            <div class="div-text"> 
-                <p>I am a natural person investing on my own behalf as a sole owner, 
-                    joint tenant, or tenant in coommon</p>
+            <div class="container-main__hint _m-20">
+                <span class="container-main__label">I am a natural person investing on my own behalf as a sole owner,
+                    joint tenant, or tenant in coommon</span>
             </div>
-            <div class="checkbox-agree">
-                <label><input type="checkbox" name="checkbox_agree">I agree to the terms and receinveng 
-                    notifications from iinto <a>View full terms</a></label> 
+            <div class="container-main__agree _m-20">
+                <label class="module-agree">
+                    <input class="module-agree__checkbox" type="checkbox" name="checkbox_agree">
+                    <p class="module-agree__label">I agree to the terms and receinveng notifications from iinto
+                        <a class="module-agree__link">View full terms</a>
+                    </p>
+                </label>
             </div>
             <button class="button-create" type="submit">Create Account</button>
-        </div>
-    </div>
+        </article>
+    </main>
+</div>
 </body>
 </html>
